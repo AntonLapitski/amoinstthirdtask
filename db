@@ -1,0 +1,9 @@
+create database stats;
+use stats;
+CREATE TABLE mystats (
+    id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
+    ip VARCHAR(30) NOT NULL,
+    city VARCHAR(30) NOT NULL,
+    platform VARCHAR(50),
+    visit_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+    );
